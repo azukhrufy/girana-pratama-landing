@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PT Girana Pratama Mandiri — Corporate Landing Page
 
-## Getting Started
+> Solusi Tenaga Kerja Profesional & Terpercaya untuk Bisnis Anda
 
-First, run the development server:
+Modern, responsive corporate landing page for **PT Girana Pratama Mandiri**, a professional outsourcing company based in Bandung, Indonesia. Built with Next.js App Router and Chakra UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🌐 **Live:** [giranapratama.co.id](https://giranapratama.co.id)
+
+---
+
+## ✨ Features
+
+- **Fully Responsive** — Optimised for mobile, tablet, and desktop
+- **Scroll Animations** — Smooth entrance animations powered by Framer Motion
+- **Glassmorphism Navbar** — Sticky header with blur effect and mobile drawer menu
+- **Dynamic OG Image** — Auto-generated branded preview for link sharing (WhatsApp, Telegram, Facebook, Twitter)
+- **SEO Optimised** — Comprehensive metadata, Open Graph, Twitter Cards, JSON-LD structured data, robots.txt, sitemap.xml
+- **All Bahasa Indonesia** — Full Indonesian language content
+
+## 📄 Sections
+
+| Section | Description |
+|---------|-------------|
+| **Hero** | Headline, tagline, and call-to-action buttons |
+| **Tentang Kami** | Company overview and mission |
+| **Layanan Kami** | 5 service cards — Marketing & Sales, Administrasi, Customer Service, Operasional, Kebersihan & Keamanan |
+| **Mengapa Kami** | Numbered benefits list with icons |
+| **Kontak Kami** | Contact info + message form |
+| **Footer** | Company details, contact links, Google Maps embed |
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| [Next.js 14](https://nextjs.org) | React framework (App Router, JavaScript) |
+| [Chakra UI v2](https://chakra-ui.com) | Component library & styling |
+| [Framer Motion](https://www.framer.com/motion) | Scroll-triggered animations |
+| [Lucide React](https://lucide.dev) | Icon library |
+| [React Icons](https://react-icons.github.io/react-icons) | Additional icons |
+
+## 📁 Project Structure
+
+```
+app/
+├── layout.js             # Root layout, metadata, fonts
+├── page.js               # Landing page (composes all sections)
+├── globals.css            # Minimal CSS reset
+├── opengraph-image.js     # Dynamic OG image generation
+├── twitter-image.js       # Twitter card image
+├── robots.js              # robots.txt generation
+├── sitemap.js             # sitemap.xml generation
+└── favicon.ico
+
+components/
+├── Navbar.js              # Sticky navbar with mobile drawer
+├── Hero.js                # Hero section
+├── TentangKami.js         # About Us section
+├── LayananKami.js         # Services section (5 cards)
+├── MengapaKami.js         # Why Choose Us section
+├── KontakKami.js          # Contact section with form
+├── Footer.js              # Footer with maps embed
+├── AnimateOnScroll.js     # Reusable scroll animation wrapper
+├── ChakraProviders.js     # Chakra UI theme provider
+└── JsonLd.js              # Structured data (LocalBusiness)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js ≥ 18
+- Yarn (recommended) or npm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repository
+git clone https://github.com/azukhrufy/girana-pratama-landing.git
+cd girana-pratama-landing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+yarn install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start the development server
+yarn dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+yarn build
+yarn start
+```
+
+## 🎨 Brand Colors
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Orange | `#F05117` | Primary accent, CTAs, highlights |
+| Navy | `#10108A` | Primary brand, headings, navbar |
+| Deep Navy | `#0B0B5E` | Footer background |
+
+## 📝 License
+
+This project is proprietary to PT Girana Pratama Mandiri.
+
+---
+
+Built with ❤️ for PT Girana Pratama Mandiri
